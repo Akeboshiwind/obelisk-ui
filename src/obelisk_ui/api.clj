@@ -54,56 +54,64 @@
   "Returns information about the currently logged in user"
   [{:keys [server-address
            basic-auth
-           cookie]}]
+           cookie]
+    :as opts}]
   (get-json "/api/currUser" opts))
 
 (defn versions
   "Returns the versions of the software running on the obelisk"
   [{:keys [server-address
            basic-auth
-           cookie]}]
+           cookie]
+    :as opts}]
   (get-json "/api/inventory/versions" opts))
 
 (defn dashboard
   "Returns the information displayed on the dashboard of the obelisk ui"
   [{:keys [server-address
            basic-auth
-           cookie]}]
+           cookie]
+    :as opts}]
   (get-json "/api/status/dashboard" opts))
 
 (defn pools
   "Returns information about the pools that are currently setup on the obelisk"
   [{:keys [server-address
            basic-auth
-           cookie]}]
+           cookie]
+    :as opts}]
   (get-json "/api/config/pools" opts))
 
 (defn mining
   "Returns the currently set mining config"
   [{:keys [server-address
            basic-auth
-           cookie]}]
+           cookie]
+    :as opts}]
   (get-json "/api/config/mining" opts))
 
 (defn system
   "Returns the currently set system config"
   [{:keys [server-address
            basic-auth
-           cookie]}]
+           cookie]
+    :as opts}]
   (get-json "/api/config/system" opts))
 
 (defn network
   "Returns the currently set network config"
   [{:keys [server-address
            basic-auth
-           cookie]}]
+           cookie]
+    :as opts}]
   (get-json "/api/config/network" opts))
 
 (defn diagnostics
   "Returns diagnostics information"
   [{:keys [server-address
            basic-auth
-           cookie]}]
+           cookie]
+    :as opts}]
   (-> (get "/api/status/diagnostics" opts)
       :body
       slurp))
