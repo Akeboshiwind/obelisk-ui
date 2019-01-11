@@ -6,9 +6,7 @@ A clojure wrapper for the api calls that the [obelisk](https://obelisk.tech/) mi
 
 Include the following in your list of dependencies:
 
-```clojure
-[obelisk-ui "0.0.1"]
-```
+[![Clojars Project](https://img.shields.io/clojars/v/obelisk-ui.svg)](https://clojars.org/obelisk-ui)
 
 ## Usage
 
