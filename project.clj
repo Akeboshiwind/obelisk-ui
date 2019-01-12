@@ -1,4 +1,4 @@
-(defproject obelisk-ui "0.1.0"
+(defproject obelisk-ui "0.1.1"
   :description "A clojure wrapper for the api calls that the [obelisk](https://obelisk.tech/) miner ui makes."
   :url "https://github.com/akeboshiwind/obelisk-ui"
   :license {:name "MIT"}
